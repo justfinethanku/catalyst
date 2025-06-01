@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "34.12%",
+  "content_preservation_ratio": 0.34116991643454037,
+  "threshold_used": 0.75,
+  "original_tokens": 1777,
+  "chunk_tokens": 686,
+  "original_length": 8975,
+  "reconstructed_length": 3062,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/indelible_discovery_20250531_190656.json",
+  "timestamp": "2025-05-31T19:07:04.953468",
+  "warning_reason": "Low content preservation: 34.12% (threshold: 75.00%)"
+}

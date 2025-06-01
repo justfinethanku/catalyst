@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "43.48%",
+  "content_preservation_ratio": 0.434801016088061,
+  "threshold_used": 0.75,
+  "original_tokens": 1791,
+  "chunk_tokens": 815,
+  "original_length": 9448,
+  "reconstructed_length": 4108,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/Legacy Advisors_discovery_20250531_153525.json",
+  "timestamp": "2025-05-31T15:35:34.760325",
+  "warning_reason": "Low content preservation: 43.48% (threshold: 75.00%)"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "66.90%",
+  "content_preservation_ratio": 0.6690379684010257,
+  "threshold_used": 0.75,
+  "original_tokens": 2255,
+  "chunk_tokens": 1528,
+  "original_length": 12089,
+  "reconstructed_length": 8088,
+  "num_chunks": 8,
+  "checkpoint_file": "data_integrity_backups/Legacy Advisors_competitive_landscape_20250531_154014.json",
+  "timestamp": "2025-05-31T15:40:31.985601",
+  "warning_reason": "Content preservation 66.90% below threshold 75.00%"
+}

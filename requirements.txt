@@ -1,0 +1,19 @@
+# Core AI and LLM
+openai==1.82.0
+google-generativeai==0.8.5
+tiktoken==0.7.0
+
+# Vector Database  
+chromadb==0.5.23
+
+# Web Framework
+streamlit==1.45.1
+
+# PDF Generation
+markdown2==2.5.3
+weasyprint==65.1
+
+# Configuration and Environment
+python-dotenv==1.1.0
+pydantic==2.11.5
+PyYAML==6.0.2

@@ -1,0 +1,81 @@
+{
+  "step": "competitor_analysis",
+  "company_url": "{{url}}",
+  "strategic_analysis": "A comprehensive synthesis of the competitive landscape reveals a dynamic market characterized by evolving business models, emerging disruptors, and shifting power balances. The competitive ecosystem spans direct, indirect, and emerging players with diverse value propositions and go-to-market strategies. Market concentration remains medium, with fragmentation stable but showing signs of potential consolidation. Recent changes include new entrants leveraging technology shifts and selective mergers. Key risks involve regulatory pressures, technological obsolescence, and aggressive competitor expansion. Opportunities lie in underserved market segments, innovation in customer engagement, and strategic partnerships. The company must prioritize agility in strategy, focus on sustainable differentiation, and proactively address vulnerabilities to strengthen its competitive position.",
+  "competitive_ecosystem": [
+    {
+      "name": "Competitor A",
+      "position": "Leader",
+      "strategy": "Focuses on scale and brand strength with a broad product portfolio and integrated ecosystem approach.",
+      "market_share_estimate": null,
+      "notable_moves": ["Acquisition of Startup X", "Launch of AI-driven product line"]
+    },
+    {
+      "name": "Competitor B",
+      "position": "Challenger",
+      "strategy": "Emphasizes innovation and niche market penetration with agile product development cycles.",
+      "market_share_estimate": null,
+      "notable_moves": ["Partnership with Tech Firm Y", "Expansion into emerging markets"]
+    },
+    {
+      "name": "Competitor C",
+      "position": "Niche",
+      "strategy": "Targets specialized customer segments with tailored solutions and high service differentiation.",
+      "market_share_estimate": null,
+      "notable_moves": ["New service model introduction", "Strategic alliance with Industry Leader Z"]
+    }
+  ],
+  "market_dynamics": {
+    "concentration": "Medium",
+    "fragmentation_trend": "Stable",
+    "recent_changes": ["New entrant leveraging AI technology", "Selective mergers among mid-sized players"]
+  },
+  "risks": [
+    {
+      "risk": "Regulatory changes impacting market access",
+      "severity": "High",
+      "evidence": "Recent policy shifts have tightened compliance requirements."
+    },
+    {
+      "risk": "Rapid technological disruption",
+      "severity": "Medium",
+      "evidence": "Emergence of AI-based competitors altering traditional value chains."
+    },
+    {
+      "risk": "Competitor aggressive expansion",
+      "severity": "Medium",
+      "evidence": "Competitor B's recent market entries and partnerships."
+    }
+  ],
+  "opportunities": [
+    {
+      "opportunity": "Expansion into underserved market segments",
+      "priority": "High",
+      "rationale": "White space exists with unmet customer needs and limited competition."
+    },
+    {
+      "opportunity": "Leveraging technology for product innovation",
+      "priority": "Medium",
+      "rationale": "Technology shifts enable differentiation and improved customer engagement."
+    },
+    {
+      "opportunity": "Forming strategic partnerships",
+      "priority": "Medium",
+      "rationale": "Collaborations can enhance market access and resource capabilities."
+    }
+  ],
+  "implications": "The company should focus on leveraging its core strengths while aggressively pursuing innovation and market expansion in identified white spaces. Proactive risk management regarding regulatory and technological shifts is critical. Strategic partnerships and agile response to competitor moves will enhance resilience and competitive advantage. Prioritizing these areas will enable the company to defend its position and capitalize on emerging opportunities.",
+  "summary": [
+    "Market shows medium concentration with stable fragmentation but signs of consolidation.",
+    "Competitors differentiate through scale, innovation, and niche specialization.",
+    "Significant risks include regulatory changes and technological disruption.",
+    "Opportunities exist in underserved segments and technology-enabled innovation.",
+    "Strategic agility and partnerships are key to sustaining competitive advantage."
+  ],
+  "context_used": {
+    "discovery": "{{context.discovery}}",
+    "market_position": "{{context.market_position}}",
+    "audience_insights": "{{context.audience_insights}}",
+    "previous_analyses": "{{context.previous_analyses}}"
+  }
+}

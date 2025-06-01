@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "44.80%",
+  "content_preservation_ratio": 0.4479837747554283,
+  "threshold_used": 0.75,
+  "original_tokens": 1668,
+  "chunk_tokens": 829,
+  "original_length": 8382,
+  "reconstructed_length": 3755,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/indelible_market_position_20250531_143523.json",
+  "timestamp": "2025-05-31T14:35:31.891957",
+  "warning_reason": "Low content preservation: 44.80% (threshold: 75.00%)"
+}

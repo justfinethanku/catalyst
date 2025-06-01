@@ -1,0 +1,1 @@
+"""Pipeline execution engine for autonomous research."""

@@ -1,0 +1,24 @@
+{
+  "id": "717597a7ef089a93a478133f56c7825e",
+  "content": "From Legacy Advisors Competitive Landscape - Indirect Competitors: cession issues. - **Service Breadth:** Gaps in adjacent offerings (e.g., family governance, impact investing, philanthropic advisory) that larger competitors or family offices provide.",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "step": "competitive_landscape",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://legacyadvisors.io/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T15:40:32.169497",
+    "chunk_index": 0,
+    "section": "Indirect Competitors",
+    "original_step": "competitive_landscape",
+    "content_type": "contextualized_chunk",
+    "token_count": 48,
+    "original_doc_id": "3f7aeca12244f33140313e20517a64b4",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T15:40:32.209484"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "2ead75a9b6c2a19eff1e4afced7cf7fa",
+  "content": "From Legacy Advisors Strategic Synthesis - Strategic Strengths & Competitive Advantages:\n\nation advisors to reduce key-person risk and support growth.\n- Institutionalize knowledge and processes to ensure continuity and scalability.",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "step": "strategic_synthesis",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://legacyadvisors.io/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T15:41:31.720042",
+    "chunk_index": 0,
+    "section": "Strategic Strengths & Competitive Advantages",
+    "original_step": "strategic_synthesis",
+    "content_type": "contextualized_chunk",
+    "token_count": 38,
+    "original_doc_id": "0453dadf849963e35a7f8469f8f6610f",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T15:41:31.758834"
+}

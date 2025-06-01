@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "74.04%",
+  "content_preservation_ratio": 0.7404115061925689,
+  "threshold_used": 0.75,
+  "original_tokens": 2047,
+  "chunk_tokens": 1595,
+  "original_length": 10012,
+  "reconstructed_length": 7413,
+  "num_chunks": 8,
+  "checkpoint_file": "data_integrity_backups/indelible_competitive_landscape_20250531_191045.json",
+  "timestamp": "2025-05-31T19:11:18.996580",
+  "warning_reason": "Content preservation 74.04% below threshold 75.00%"
+}

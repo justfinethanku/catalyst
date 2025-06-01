@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "content_preservation": "77.79%",
+  "content_preservation_ratio": 0.7778807537843683,
+  "threshold_used": 0.75,
+  "original_tokens": 1161,
+  "chunk_tokens": 947,
+  "original_length": 6474,
+  "reconstructed_length": 5036,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/Legacy Advisors_strategic_synthesis_20250531_154122.json",
+  "timestamp": "2025-05-31T15:41:31.613049",
+  "warning_reason": null
+}

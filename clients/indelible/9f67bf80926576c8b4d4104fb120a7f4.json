@@ -1,0 +1,23 @@
+{
+  "id": "9f67bf80926576c8b4d4104fb120a7f4",
+  "content": "From Indelible Discovery - Company Foundation & Identity:  \n\n**Pricing:**  \nNo public pricing is listed\u2014typical for enterprise SaaS with custom solutions, suggesting a consultative sales approach and higher average contract values.",
+  "metadata": {
+    "client": "indelible",
+    "step": "discovery",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://becomeindelible.com/",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T19:07:05.038362",
+    "chunk_index": 1,
+    "section": "Company Foundation & Identity",
+    "original_step": "discovery",
+    "content_type": "contextualized_chunk",
+    "token_count": 45,
+    "original_doc_id": "4d0fb5d30265288b664d018623332e5f",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T19:07:05.081375"
+}

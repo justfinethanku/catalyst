@@ -1,0 +1,33 @@
+# Secrets and API keys
+api_secrets/
+*.env
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+catalyst_env/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Vector Database
+catalyst_vector_db/
+*.db
+*.db-shm
+*.db-wal

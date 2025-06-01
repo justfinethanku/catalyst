@@ -1,0 +1,14 @@
+{
+  "id": "70835233a846eaf45ed4ac02c1c1d980",
+  "content": "Pipeline Execution Summary for indelible\nPipeline: company_intelligence\nURL: https://becomeindelible.com/\nStatus: completed\nExecution Time: 388.54 seconds\nSteps Completed: 5/5\n\nStep Results:\n- discovery: success\n- market_position: success\n- audience_insights: success\n- competitive_landscape: success\n- strategic_synthesis: success",
+  "metadata": {
+    "client": "indelible",
+    "type": "pipeline_result",
+    "pipeline": "company_intelligence",
+    "status": "completed",
+    "steps_completed": 5,
+    "execution_time": 388.543674,
+    "timestamp": "2025-05-31T19:12:33.781919"
+  },
+  "stored_at": "2025-05-31T19:12:33.824824"
+}

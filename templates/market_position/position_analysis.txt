@@ -1,0 +1,211 @@
+You are conducting a strategic market position analysis for the company at {{url}}. Building on the foundational company intelligence, your mission is to understand how this company positions itself within its competitive landscape and market dynamics.
+
+## YOUR STRATEGIC MISSION
+
+Think like a strategic consultant analyzing market positioning. You're not categorizing the company into predefined boxes - you're uncovering the nuanced story of how they compete, differentiate, and position themselves for market success.
+
+**Core Strategic Questions:**
+- How does this company define and own its market space?
+- What makes their positioning unique or compelling in their industry?
+- How sophisticated and defensible is their competitive strategy?
+- What market dynamics are working for or against them?
+- Where do they have strategic advantages, and where are they vulnerable?
+- How does their positioning align with market trends and opportunities?
+
+## ANALYTICAL FRAMEWORK
+
+**1. Market Category & Positioning**
+Understand how they define their market space:
+- What market category do they claim to operate in?
+- How do they frame the problem they solve vs. how the market sees it?
+- Are they creating a new category or competing in an existing one?
+- How do they position against traditional solutions or alternatives?
+
+**2. Competitive Differentiation Analysis**
+Analyze their strategic differentiation:
+- What unique value propositions do they emphasize?
+- How do they differentiate on product, service, business model, or experience?
+- What competitive moats or barriers to entry do they claim or demonstrate?
+- How sustainable are their differentiators against competitive response?
+
+**3. Market Dynamics & Trends**
+Examine the broader market context:
+- What industry trends are they riding or responding to?
+- How is their market growing, evolving, or maturing?
+- What disruptions or shifts might impact their position?
+- How do regulatory, technology, or economic trends affect them?
+
+**4. Strategic Positioning Signals**
+Look for positioning evidence across:
+- Marketing messages and brand positioning
+- Product roadmap and development priorities
+- Partnership and ecosystem strategies
+- Pricing and go-to-market approaches
+- Leadership communications and vision statements
+
+## DISCOVERY SOURCES
+
+**Website Deep Dive:**
+- Homepage and product positioning language
+- Competitive comparison pages or messaging
+- Case studies and customer success stories
+- Leadership blog posts, vision content
+- Investor relations or company strategy materials
+
+**Market Intelligence Search:**
+- Industry analyst reports mentioning the company
+- Competitive comparison articles and reviews
+- Market share, growth, or ranking data
+- Recent strategic moves, partnerships, acquisitions
+- Customer reviews revealing positioning perception
+- Press releases and strategic announcements
+
+## STRATEGIC ANALYSIS OUTPUT
+
+Write a comprehensive strategic analysis that reveals how this company competes and positions itself. Focus on insights and strategic implications rather than surface-level categorization.
+
+### Market Position Assessment
+Analyze how this company defines and occupies its market space. What market category are they in, and more importantly, how do they frame that market? Are they a leader, challenger, or niche player? What evidence supports their market position claims?
+
+### Competitive Differentiation Strategy
+Examine what makes this company different from alternatives. What unique value do they provide? How do they differentiate on product capabilities, business model, customer experience, or market approach? How defensible and sustainable are these differentiators?
+
+### Strategic Positioning Analysis
+Analyze how they position themselves competitively. What messaging strategy do they use? Who do they position against, and how? What market narrative are they trying to create or influence? How consistent is their positioning across different channels?
+
+### Market Opportunity & Dynamics
+Assess the market context they operate within. How large and growing is their addressable market? What trends are driving market evolution? What opportunities or threats do market dynamics create for their positioning?
+
+### Competitive Landscape Context
+Understand where they fit in the competitive landscape. Who are their primary competitors? How do they compare on key dimensions? What white space or market gaps are they trying to capture?
+
+### Positioning Strength & Vulnerability Analysis
+Evaluate the strength of their market position. What competitive advantages do they have? Where are they vulnerable to competitive attack? What would it take for competitors to replicate their position?
+
+### Strategic Implications & Outlook
+Analyze what their positioning suggests about their strategic direction. How well-positioned are they for future market evolution? What strategic moves would strengthen their position? What risks does their current positioning create?
+
+## ANALYTICAL PRINCIPLES
+
+**Think Competitively:** Always consider how their positioning relates to alternatives and competitors  
+**Assess Sustainability:** Evaluate how defensible their positioning is over time  
+**Look for Evidence:** Support positioning claims with concrete evidence and market signals  
+**Consider Context:** Understand positioning within broader market trends and dynamics  
+**Evaluate Coherence:** Assess how well their positioning aligns across strategy, products, and messaging  
+**Identify Implications:** Draw insights about what their positioning means for future strategy
+
+## OUTPUT STYLE
+
+Write as a strategic consultant providing market positioning intelligence. Use analytical frameworks but express insights in natural language. Focus on strategic implications and competitive dynamics rather than just descriptive categorization.
+
+Your analysis should help someone understand not just where this company sits in the market, but how they compete, what their strategic advantages are, and how their positioning might evolve. Make it insightful enough to inform strategic decision-making.
+
+{{#if context.discovery}}
+## COMPANY FOUNDATION CONTEXT
+
+Building on the discovery analysis:  
+{{context.discovery}}
+
+Use this foundational understanding to inform your positioning analysis. How does their market positioning align with their business model, capabilities, and strategic focus?  
+{{/if}}
+
+{{#if context.previous_analyses}}
+## COMPARATIVE MARKET CONTEXT
+
+You have access to positioning analyses from other companies. Use this to:  
+- Identify common positioning patterns or unique approaches  
+- Compare competitive strategies across similar companies  
+- Provide perspective on industry positioning trends  
+- Reference similar positioning challenges or opportunities  
+
+Previous company positioning insights:  
+{{context.previous_analyses}}  
+{{/if}}
+You are a senior market strategy analyst.
+**Output only a single, lossless JSON object—no markdown, no code blocks, no explanations.**
+Every field must be present, even if null.
+
+---
+
+## REQUIRED JSON STRUCTURE
+
+{
+  "step": "position_analysis",
+  "company_url": "{{url}}",
+  "market_category_positioning": {
+    "claimed_market_category": null,
+    "market_framing": null,
+    "is_category_creator": null,
+    "market_leadership_status": null,
+    "evidence": []
+  },
+  "competitive_differentiation": {
+    "unique_value_props": [],
+    "differentiation_channels": [],
+    "competitive_moats": [],
+    "sustainability_risks": []
+  },
+  "market_dynamics_trends": {
+    "relevant_trends": [],
+    "market_growth_evolution": null,
+    "potential_disruptions": [],
+    "regulatory_technology_economic_factors": []
+  },
+  "strategic_positioning_signals": {
+    "messaging_strategy": null,
+    "product_roadmap_priorities": [],
+    "partnership_ecosystem": [],
+    "pricing_go_to_market": null,
+    "leadership_vision": null
+  },
+  "market_opportunity_dynamics": {
+    "addressable_market_size": null,
+    "market_drivers": [],
+    "opportunities": [],
+    "threats": []
+  },
+  "competitive_landscape_context": {
+    "primary_competitors": [],
+    "comparative_strengths": [],
+    "comparative_weaknesses": [],
+    "market_gaps_white_space": []
+  },
+  "positioning_strength_vulnerability": {
+    "competitive_advantages": [],
+    "vulnerabilities": [],
+    "replicability_factors": []
+  },
+  "strategic_implications_outlook": {
+    "future_positioning_outlook": null,
+    "recommended_strategic_moves": [],
+    "positioning_risks": []
+  },
+  "reasoning": "Full strategic analysis and synthesis of all available data, integrating signals, context, and competitive dynamics.",
+  "implications": "Interpretation of findings and recommendations for executive action or strategic direction.",
+  "summary": [
+    "Key finding 1",
+    "Key finding 2",
+    "Key finding 3"
+  ],
+  "context_used": {
+    "discovery": "{{context.discovery}}",
+    "previous_analyses": "{{context.previous_analyses}}"
+  }
+}
+
+---
+
+## INSTRUCTIONS
+
+- Fill every field, even if data is unavailable (use null, empty string, or an empty array as appropriate).
+- For narrative, synthesis, or implications, use the "reasoning" and "implications" fields.
+- All lists must be arrays, not loose text.
+- "context_used" should summarize any provided context fields; if unavailable, set to null.
+- Do not output markdown, code blocks, or explanations. Output must begin with `{` and end with `}`.
+
+---
+
+## INPUT
+
+- Company URL: {{url}}
+- Context fields: {{context.discovery}}, {{context.previous_analyses}}

@@ -1,0 +1,14 @@
+{
+  "status": "WARNING",
+  "content_preservation": "48.61%",
+  "content_preservation_ratio": 0.486117136659436,
+  "threshold_used": 0.75,
+  "original_tokens": 1737,
+  "chunk_tokens": 929,
+  "original_length": 9220,
+  "reconstructed_length": 4482,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/indelible_strategic_synthesis_20250531_191217.json",
+  "timestamp": "2025-05-31T19:12:33.588763",
+  "warning_reason": "Low content preservation: 48.61% (threshold: 75.00%)"
+}

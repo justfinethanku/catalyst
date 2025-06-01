@@ -1,0 +1,24 @@
+{
+  "id": "91b9f38bf44c8ffb69bb79b50b630ef5",
+  "content": "From Legacy Advisors Market Position - Market Category & Positioning Strategy:\n\n**Value Proposition:**  \nLegacy Advisors promises *peace of mind, legacy preservation, and strategic clarity* for founders navigating complex exits. Their process addresses both the technical and emotional dimensions of transition, providing a differentiated client experience.\n\n**Defensibility:**  \n- **Trust and Reputation:** High switching costs due to the intimate, trust-based nature of the relationship.\n- **Niche Expertise:** Deep specialization in founder-led, mid-market exits is not easily replicated by larger, more generalized firms.\n\n---\n\n## 3. Market Size & Opportunity Assessment\n\n**Market Size & Growth:**\n- **Market Size:** The U.S. lower-middle and middle-market business exit advisory space is substantial. There are over 200,000 businesses in the $5M\u2013$100M range, with an estimated 10,000\u201315,000 exits annually (Source: IBBA, Axial, PitchBook).\n- **Growth Drivers:**\n  - **Demographic Shifts:** Baby boomer retirements\u2014over 2.3 million businesses owned by boomers, with $10+ trillion in assets expected to change hands by 2030 (Source: PwC, UBS).\n  - **Wealth Transfer:** Largest intergenerational wealth transfer in history underway.\n  - **Founder Mindset Shift:** Increasing desire for purpose-driven exits, legacy preservation, and impact investing.\n- **Trends:**\n  - **Demand for Personalization:** Founders seek tailored, values-aligned advice",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "step": "market_position",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://legacyadvisors.io/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T15:36:32.680293",
+    "chunk_index": 1,
+    "section": "Market Category & Positioning Strategy",
+    "original_step": "market_position",
+    "content_type": "contextualized_chunk",
+    "token_count": 313,
+    "original_doc_id": "e207df35bc577a2e20b242077cafaa31",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T15:36:32.723653"
+}

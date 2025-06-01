@@ -1,0 +1,23 @@
+{
+  "id": "755285ba647713c45989fd9957949e71",
+  "content": "From Indelible's Audience Insights - Executive Summary:  \nIndelible positions itself as a provider of \"digital trust infrastructure\" for organizations facing high-stakes risk, compliance, and audit requirements. Their core offering leverages blockchain technology to create tamper-evident audit trails and data provenance, targeting regulated industries and security-conscious enterprises. This analysis unpacks the human and organizational dynamics behind their customer base, explores the psychology and context of their buyers, and surfaces actionable insights for strategic positioning and market expansion.",
+  "metadata": {
+    "client": "indelible",
+    "step": "audience_insights",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://becomeindelible.com/",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T19:09:41.831835",
+    "chunk_index": 0,
+    "section": "Executive Summary",
+    "original_step": "audience_insights",
+    "content_type": "contextualized_chunk",
+    "token_count": 103,
+    "original_doc_id": "2e73163fc7b74646a13b9aa73990330e",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T19:09:41.885293"
+}

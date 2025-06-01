@@ -1,0 +1,24 @@
+{
+  "id": "8cf364f88c87976bf68bb84d7065776b",
+  "content": "From Legacy Advisors Discovery - 2. Products & Services Analysis:  \nmodern UX, SSL-secured, responsive\u2014suggests investment in digital presence.\n- **Content:** Regular blog updates and resource guides indicate ongoing marketing operations.\n- **Tools:** No evidence of proprietary software; likely leverages standard CRM, project management, and financial modeling tools.\n\n**Operational Scale:**  \n- Boutique firm\u2014likely a small, highly specialized team.\n- Depth of content and testimonials suggest several years of operation and established processes.\n\n**Capabilities:**  \n- High-touch, relationship-driven advisory\n- Multi-disciplinary expertise (business, financial, personal planning)\n- Likely limited to a select number of concurrent clients, emphasizing quality over scale",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "step": "discovery",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://legacyadvisors.io/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T15:35:34.886925",
+    "chunk_index": 0,
+    "section": "2. Products & Services Analysis",
+    "original_step": "discovery",
+    "content_type": "contextualized_chunk",
+    "token_count": 142,
+    "original_doc_id": "866e64d88fb0de31e532b54540eb1d01",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T15:35:34.928485"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "f8acb713e04150fa777d402b10ed06bd",
+  "content": "From Indelible Audience Insights - Primary Audience Segments & Personas:\n\nD. **Enterprise & Corporate Security**\n- **Characteristics:** Corporate security teams, internal auditors, fraud investigators at large enterprises (esp. those exposed to crypto).\n- **Needs:** Internal investigations, due diligence, and risk assessments related to crypto exposure.\n- **Behavior:** Use Indelible for one-off or ongoing investigations, often in response to incidents or as part of M&A due diligence.\n- **Example:** A multinational discovers crypto exposure in a subsidiary and engages Indelible for a forensic review.\n\n#### **Segment Differentiation**\n- **Law firms** focus on litigation and evidentiary standards.\n- **Financial institutions** prioritize compliance and risk management.\n- **Government agencies** require investigative and educational support.\n- **Enterprises** seek internal risk mitigation and due diligence.",
+  "metadata": {
+    "client": "indelible",
+    "step": "audience_insights",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://becomeindelible.com/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "timestamp": "2025-05-31T14:36:56.875633",
+    "chunk_index": 0,
+    "section": "Primary Audience Segments & Personas",
+    "original_step": "audience_insights",
+    "content_type": "contextualized_chunk",
+    "token_count": 173,
+    "original_doc_id": "c975cfe67b397065d81a2433e31df4e5",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T14:36:56.917665"
+}

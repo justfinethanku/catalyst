@@ -1,0 +1,48 @@
+{
+  "step": "intelligence_report",
+  "company_url": "{{url}}",
+  "executive_summary_assessment": {
+    "strategic_position": null,
+    "cross_dimensional_insights": []
+  },
+  "strategic_strengths_advantages": {
+    "reinforcing_strengths": [],
+    "defensible_edges": []
+  },
+  "market_opportunity_analysis": {
+    "growth_levers": [],
+    "white_space": [],
+    "expansion_opportunities": []
+  },
+  "strategic_risks_vulnerabilities": {
+    "critical_risks": [],
+    "risk_interactions": []
+  },
+  "competitive_positioning_insights": {
+    "comparative_approach": null,
+    "market_norms_comparison": null
+  },
+  "strategic_recommendations": {
+    "recommended_moves": [],
+    "actions_to_avoid": []
+  },
+  "future_outlook_considerations": {
+    "emerging_trends": [],
+    "market_shifts": [],
+    "inflection_points": []
+  },
+  "reasoning": "Full strategic synthesis narrative: integrate findings, patterns, risks, and recommended actions.",
+  "implications": "Interpretation of all cross-step intelligence—what this means for strategy and executive priorities.",
+  "summary": [
+    "Key synthesized takeaway 1",
+    "Key synthesized takeaway 2",
+    "Key synthesized takeaway 3"
+  ],
+  "context_used": {
+    "discovery": "{{context.discovery}}",
+    "market_position": "{{context.market_position}}",
+    "audience_insights": "{{context.audience_insights}}",
+    "competitive_landscape": "{{context.competitive_landscape}}",
+    "previous_analyses": "{{context.previous_analyses}}"
+  }
+}

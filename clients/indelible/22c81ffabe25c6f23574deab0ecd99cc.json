@@ -1,0 +1,22 @@
+{
+  "id": "22c81ffabe25c6f23574deab0ecd99cc",
+  "content": "From Indelible Strategic Synthesis - Executive Summary:",
+  "metadata": {
+    "client": "indelible",
+    "step": "strategic_synthesis",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://becomeindelible.com/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "timestamp": "2025-05-31T14:40:28.382470",
+    "chunk_index": 0,
+    "section": "Executive Summary",
+    "original_step": "strategic_synthesis",
+    "content_type": "contextualized_chunk",
+    "token_count": 11,
+    "original_doc_id": "832c221953927a64bd1295c24c7fe80c",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T14:40:28.445852"
+}

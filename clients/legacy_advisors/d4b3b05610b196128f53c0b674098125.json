@@ -1,0 +1,24 @@
+{
+  "id": "d4b3b05610b196128f53c0b674098125",
+  "content": "From Legacy Advisors Audience Insights - Primary Audience Segments & Personas:\n\n2. **Legacy & Impact Preservation**\n   - *Problem:* Owners fear their life\u2019s work will be lost or misaligned post-exit.\n   - *Solution:* The firm helps articulate and embed legacy goals into exit plans, including philanthropy and family stewardship.\n\n3. **Succession & Family Governance**\n   - *Problem:* Family businesses struggle with succession, governance, and conflict.\n   - *Solution:* Legacy Advisors facilitates succession planning, governance structures, and intergenerational communication.\n\n4. **Founder Transition Support**\n   - *Problem:* Emotional and psychological challenges in letting go.\n   - *Solution:* High-touch, relationship-driven advisory, supporting founders through the transition.\n\n**B. Value Delivered**\n\n- *Personalization:* Deeply tailored advice, not \u201cone-size-fits-all.\u201d\n- *Trust & Continuity:* Long-term relationships that extend beyond the transaction.\n- *Education:* Empowering clients with knowledge and fr",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "step": "audience_insights",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://legacyadvisors.io/",
+    "priority": "high",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T15:39:10.173702",
+    "chunk_index": 1,
+    "section": "Primary Audience Segments & Personas",
+    "original_step": "audience_insights",
+    "content_type": "contextualized_chunk",
+    "token_count": 203,
+    "original_doc_id": "4dc9a385755319bac169a5e3a0823cb6",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T15:39:10.215707"
+}

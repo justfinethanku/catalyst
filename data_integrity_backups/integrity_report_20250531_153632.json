@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "content_preservation": "80.95%",
+  "content_preservation_ratio": 0.8094863731656184,
+  "threshold_used": 0.75,
+  "original_tokens": 1528,
+  "chunk_tokens": 1238,
+  "original_length": 7632,
+  "reconstructed_length": 6178,
+  "num_chunks": 4,
+  "checkpoint_file": "data_integrity_backups/Legacy Advisors_market_position_20250531_153621.json",
+  "timestamp": "2025-05-31T15:36:32.615380",
+  "warning_reason": null
+}

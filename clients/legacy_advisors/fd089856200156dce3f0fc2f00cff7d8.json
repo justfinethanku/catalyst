@@ -1,0 +1,14 @@
+{
+  "id": "fd089856200156dce3f0fc2f00cff7d8",
+  "content": "Pipeline Execution Summary for Legacy Advisors\nPipeline: company_intelligence\nURL: https://legacyadvisors.io/\nStatus: completed\nExecution Time: 398.01 seconds\nSteps Completed: 5/5\n\nStep Results:\n- discovery: success\n- market_position: success\n- audience_insights: success\n- competitive_landscape: success\n- strategic_synthesis: success",
+  "metadata": {
+    "client": "Legacy Advisors",
+    "type": "pipeline_result",
+    "pipeline": "company_intelligence",
+    "status": "completed",
+    "steps_completed": 5,
+    "execution_time": 398.014428,
+    "timestamp": "2025-05-31T15:41:31.801022"
+  },
+  "stored_at": "2025-05-31T15:41:31.843976"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "content_preservation": "76.47%",
+  "content_preservation_ratio": 0.7647058823529411,
+  "threshold_used": 0.75,
+  "original_tokens": 1904,
+  "chunk_tokens": 1554,
+  "original_length": 9877,
+  "reconstructed_length": 7553,
+  "num_chunks": 7,
+  "checkpoint_file": "data_integrity_backups/indelible_audience_insights_20250531_143639.json",
+  "timestamp": "2025-05-31T14:36:56.811716",
+  "warning_reason": null
+}

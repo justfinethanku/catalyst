@@ -1,0 +1,23 @@
+{
+  "id": "ad8e27fdc4b14dae004547e41a16a062",
+  "content": "From Indelible (Discovery) - Company Foundation & Identity:",
+  "metadata": {
+    "client": "indelible",
+    "step": "discovery",
+    "pipeline": "Company Intelligence Pipeline",
+    "url": "https://becomeindelible.com/",
+    "analyst": "autonomous_system",
+    "analysis_type": "comprehensive",
+    "user_provider": "openai",
+    "user_model": "gpt-4.1",
+    "timestamp": "2025-05-31T19:07:04.954533",
+    "chunk_index": 0,
+    "section": "Company Foundation & Identity",
+    "original_step": "discovery",
+    "content_type": "contextualized_chunk",
+    "token_count": 13,
+    "original_doc_id": "4d0fb5d30265288b664d018623332e5f",
+    "integrity_status": "verified"
+  },
+  "stored_at": "2025-05-31T19:07:05.038210"
+}

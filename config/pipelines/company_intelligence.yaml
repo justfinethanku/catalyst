@@ -1,0 +1,162 @@
+# Company Intelligence Pipeline Configuration
+# Autonomous research pipeline for comprehensive company analysis
+
+pipeline:
+  name: "Company Intelligence Pipeline"
+  version: "1.0"
+  description: "Autonomous multi-step research pipeline that builds comprehensive intelligence from a company URL"
+  
+  settings:
+    llm_provider: "openai"
+    model: "gpt-4.1"  # Model key from models.yaml, official name loaded dynamically
+    temperature: 0.3
+    enable_web_search: true
+    enable_vision: true
+    enable_thinking: true  # Enable thinking blocks for reasoning transparency
+    enable_citations: true  # Enable source citations in responses
+    enable_code_execution: false  # Disable code execution for now
+    max_retries: 2
+    timeout_per_step: 180  # Increased for thinking time
+    
+  # Pipeline steps execute in dependency order
+  steps:
+    - id: "discovery"
+      name: "Deep Company Discovery"
+      description: "Extract comprehensive information from company website and initial research"
+      template: "discovery/company_discovery.txt"
+      dependencies: []  # First step, no dependencies
+      config:
+        enable_screenshots: true
+        extract_technical_stack: true
+        depth: "exhaustive"
+        web_search_queries:
+          - "{{company_name}} news recent"
+          - "{{company_name}} funding revenue"
+          - "{{company_name}} leadership team"
+      output_fields:
+        - company_name
+        - domain
+        - industry
+        - sub_industry
+        - company_description
+        - products_services
+        - key_features
+        - pricing_model
+        - target_market_signals
+        - company_size
+        - founding_year
+        - leadership_team
+        - locations
+        - technical_indicators
+        - recent_news
+        - social_media_presence
+        
+    - id: "market_position"
+      name: "Market Position Analysis"
+      description: "Understand company's position, differentiation, and market dynamics"
+      template: "market_position/position_analysis.txt"
+      dependencies: ["discovery"]
+      config:
+        analyze_positioning: true
+        identify_differentiators: true
+        market_size_estimation: true
+        web_search_queries:
+          - "{{industry}} market size trends"
+          - "{{company_name}} market share"
+          - "{{company_name}} vs competitors"
+      output_fields:
+        - market_category
+        - market_position
+        - unique_value_propositions
+        - key_differentiators
+        - market_size
+        - growth_indicators
+        - industry_trends
+        - positioning_strategy
+        - brand_perception_signals
+        
+    - id: "audience_insights"
+      name: "Target Audience Deep Dive"
+      description: "Identify and analyze target audiences, use cases, and customer insights"
+      template: "audience_insights/audience_analysis.txt"
+      dependencies: ["discovery", "market_position"]
+      config:
+        build_personas: true
+        analyze_use_cases: true
+        identify_pain_points: true
+        web_search_queries:
+          - "{{company_name}} customer reviews"
+          - "{{company_name}} case studies"
+          - "who uses {{company_name}}"
+      output_fields:
+        - primary_audiences
+        - audience_segments
+        - buyer_personas
+        - use_cases
+        - customer_pain_points
+        - jobs_to_be_done
+        - buying_triggers
+        - decision_criteria
+        - customer_journey_insights
+        - testimonial_themes
+        
+    - id: "competitive_landscape"
+      name: "Competitive Intelligence Scan"
+      description: "Map competitive landscape and analyze positioning opportunities"
+      template: "competitive_landscape/competitor_analysis.txt"
+      dependencies: ["discovery", "market_position", "audience_insights"]
+      config:
+        competitor_limit: 7
+        analyze_direct: true
+        analyze_indirect: true
+        identify_alternatives: true
+        web_search_queries:
+          - "{{company_name}} competitors alternatives"
+          - "best {{product_category}} solutions"
+          - "{{company_name}} vs"
+      output_fields:
+        - direct_competitors
+        - indirect_competitors
+        - competitor_positioning
+        - competitive_advantages
+        - competitive_gaps
+        - market_white_spaces
+        - disruption_opportunities
+        - partnership_opportunities
+        - competitive_strategies
+        
+    - id: "strategic_synthesis"
+      name: "Strategic Intelligence Synthesis"
+      description: "Synthesize all findings into actionable strategic intelligence"
+      template: "strategic_synthesis/intelligence_report.txt"
+      dependencies: ["discovery", "market_position", "audience_insights", "competitive_landscape"]
+      config:
+        generate_swot: true
+        identify_opportunities: true
+        create_recommendations: true
+        prioritize_actions: true
+      output_fields:
+        - executive_summary
+        - key_insights
+        - swot_analysis
+        - strategic_opportunities
+        - growth_levers
+        - risk_factors
+        - recommended_strategies
+        - quick_wins
+        - long_term_plays
+        - success_metrics
+
+  # Execution configuration
+  execution:
+    mode: "sequential"  # Execute steps in order
+    save_intermediate: true
+    continue_on_error: false
+    context_window: 2  # Include 2 previous steps in context
+    
+  # Output configuration  
+  output:
+    format: "structured_json"
+    include_raw_responses: false
+    generate_summary: true
+    create_pdf_report: false
