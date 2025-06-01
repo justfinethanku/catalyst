@@ -22,11 +22,14 @@ pip install -r requirements.txt
 
 2. **Configure API keys**
 ```bash
-# Edit api_secrets/api_keys.py with your OpenAI API key
+# Create and edit your .env file in api_secrets/
+# Edit api_secrets/.env and add:
+# OPENAI_API_KEY=sk-...
 ```
 
 3. **Run**
 ```bash
+# Web interface:
 streamlit run src/ui/autonomous_app.py
 ```
 
@@ -39,6 +42,7 @@ streamlit run src/ui/autonomous_app.py
 
 - Python 3.10+
 - OpenAI API key
+- ChromaDB works out of the box for local use; no extra setup required unless customizing storage
 
 ## Architecture
 
