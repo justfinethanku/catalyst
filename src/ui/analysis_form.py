@@ -102,8 +102,8 @@ def render_analysis_form():
                     st.session_state.engine.add_execution_callback(execution_callback)
                     
                     # Get user-selected model settings from sidebar
-                    user_provider = st.session_state.get('selected_provider', 'openai')
-                    user_model = st.session_state.get('selected_model', 'gpt-4.1')
+                    user_provider = st.session_state.get('selected_provider', 'gemini')
+                    user_model = st.session_state.get('selected_model', 'gemini-2.5-pro')
                     
                     
                     # Execute the real pipeline with user-selected model settings

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "content_preservation": "95.30%",
+  "content_preservation_ratio": 0.9529622980251347,
+  "threshold_used": 0.7,
+  "original_tokens": 642,
+  "chunk_tokens": 707,
+  "original_length": 2785,
+  "reconstructed_length": 2654,
+  "num_chunks": 9,
+  "checkpoint_file": "data_integrity_backups/indelible_discovery_20250531_225824.json",
+  "timestamp": "2025-05-31T22:58:47.128643",
+  "warning_reason": null
+}

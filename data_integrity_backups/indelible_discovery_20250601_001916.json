@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-06-01T00:19:16.075602",
+  "client_name": "indelible",
+  "step_id": "discovery",
+  "original_data": {
+    "content": "{\n  \"step\": \"company_discovery\",\n  \"company_url\": \"https://becomeindelible.com/\",\n  \"company_foundation_identity\": {\n    \"official_name\": null,\n    \"domain\": \"https://becomeindelible.com/\",\n    \"core_business\": null,\n    \"founding_story\": null,\n    \"industry_positioning\": null\n  },\n  \"business_model_value_proposition\": {\n    \"revenue_model\": null,\n    \"pricing\": null,\n    \"target_market\": null,\n    \"value_proposition\": null,\n    \"product_sophistication\": null\n  },\n  \"market_position_strategy\": {\n    \"competitive_position\": null,\n    \"differentiators\": [],\n    \"strengths\": [],\n    \"vulnerabilities\": [],\n    \"signals_maturity_gaps\": null\n  },\n  \"operational_intelligence\": {\n    \"leadership_team\": [],\n    \"company_size\": null,\n    \"location\": null,\n    \"technology_stack\": null,\n    \"growth_stage\": null,\n    \"revealed_priorities_ambitions\": null\n  },\n  \"strategic_insights_risks\": {\n    \"key_partnerships\": [],\n    \"notable_moves\": [],\n    \"industry_trends\": [],\n    \"red_flags\": [],\n    \"biggest_opportunities\": [],\n    \"biggest_threats\": []\n  },\n  \"contextual_analysis\": {\n    \"compared_companies\": [],\n    \"patterns_anomalies\": null\n  },\n  \"summary_of_key_findings\": [\n    \"No verifiable information about the company at https://becomeindelible.com/ could be found through web or public sources.\",\n    \"All core business, operational, and strategic data are unavailable, indicating either a stealth mode, inactive, or undeveloped business presence.\",\n    \"The lack of public data is itself a strategic signal, suggesting extremely early stage, stealth, or non-operational status.\"\n  ],\n  \"reasoning\": \"Web search included direct access to https://becomeindelible.com/ (site not loading or no content), Google search for 'becomeindelible', 'Indelible company', and variations. No LinkedIn, Crunchbase, news, press releases, or third-party references found. No evidence of team, product, or business activity. All fields are set to null or empty arrays due to complete lack of verifiable information. No conflicting data was encountered; the absence of data is consistent across all reputable sources.\",\n  \"implications\": \"The total lack of public information presents a major strategic risk for diligence, partnership, or investment. If the company is in stealth, this may be intentional, but it precludes any assessment of business model, leadership, or market position. Next steps: attempt direct contact if critical, monitor for future public launches, or deprioritize until verifiable data emerges.\",\n  \"context_used\": {\n    \"previous_analyses\": \"[context.previous_analyses not found]\"\n  }\n}",
+    "metadata": {
+      "client": "indelible",
+      "step": "discovery",
+      "pipeline": "Company Intelligence Pipeline",
+      "url": "https://becomeindelible.com/",
+      "powered_by": "Catalyst v1 - Jonathan Edwards",
+      "analysis_type": "comprehensive",
+      "user_provider": "openai",
+      "user_model": "gpt-4.1",
+      "timestamp": "2025-06-01T00:19:15.558778"
+    }
+  },
+  "data_hash": "0637b056431dc5e0313e3f6b7197aa7a971b576597d14a78f689e1c97a4d34f8",
+  "token_count": 802
+}

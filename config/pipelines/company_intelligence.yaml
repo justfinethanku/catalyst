@@ -7,32 +7,32 @@ pipeline:
   description: "Autonomous multi-step research pipeline that builds comprehensive intelligence from a company URL"
   
   settings:
-    llm_provider: "openai"
-    model: "gpt-4.1"  # Model key from models.yaml, official name loaded dynamically
+    llm_provider: "gemini"  # CHANGED: Use Gemini for Google Search Grounding + URL Context
+    model: "gemini-2.5-pro"  # Primary model with Flash fallback
     temperature: 0.3
-    enable_web_search: true
+    enable_web_search: false  # DISABLED: Using Gemini native grounding instead
     enable_vision: true
     enable_thinking: true  # Enable thinking blocks for reasoning transparency
-    enable_citations: true  # Enable source citations in responses
+    enable_citations: true  # Enable source citations in responses (now via grounding)
     enable_code_execution: false  # Disable code execution for now
     max_retries: 2
-    timeout_per_step: 180  # Increased for thinking time
+    timeout_per_step: 300  # Increased for grounding processing time
     
   # Pipeline steps execute in dependency order
   steps:
     - id: "discovery"
-      name: "Deep Company Discovery"
-      description: "Extract comprehensive information from company website and initial research"
+      name: "Gemini Deep Company Discovery"
+      description: "Extract comprehensive information using Gemini Google Search Grounding + URL Context"
       template: "discovery/company_discovery.txt"
       dependencies: []  # First step, no dependencies
       config:
         enable_screenshots: true
         extract_technical_stack: true
         depth: "exhaustive"
-        web_search_queries:
-          - "{{company_name}} news recent"
-          - "{{company_name}} funding revenue"
-          - "{{company_name}} leadership team"
+        enable_grounding: true  # NEW: Enable Google Search Grounding
+        enable_url_context: true  # NEW: Enable direct URL analysis
+        require_citations: true  # NEW: Fail if no grounding sources used
+        # NOTE: web_search_queries removed - now handled by Gemini grounding automatically
       output_fields:
         - company_name
         - domain
@@ -52,18 +52,18 @@ pipeline:
         - social_media_presence
         
     - id: "market_position"
-      name: "Market Position Analysis"
-      description: "Understand company's position, differentiation, and market dynamics"
+      name: "Gemini Market Position Analysis"
+      description: "Understand company's position, differentiation, and market dynamics using Gemini enhanced research"
       template: "market_position/position_analysis.txt"
       dependencies: ["discovery"]
       config:
         analyze_positioning: true
         identify_differentiators: true
         market_size_estimation: true
-        web_search_queries:
-          - "{{industry}} market size trends"
-          - "{{company_name}} market share"
-          - "{{company_name}} vs competitors"
+        enable_grounding: true  # NEW: Use Gemini enhanced research
+        enable_url_context: true  # NEW: Company URL context available
+        require_citations: true  # NEW: Evidence-based analysis
+        # NOTE: web_search_queries removed - now handled by Gemini enhanced prompts
       output_fields:
         - market_category
         - market_position
@@ -76,18 +76,18 @@ pipeline:
         - brand_perception_signals
         
     - id: "audience_insights"
-      name: "Target Audience Deep Dive"
-      description: "Identify and analyze target audiences, use cases, and customer insights"
+      name: "Gemini Target Audience Deep Dive"
+      description: "Identify and analyze target audiences, use cases, and customer insights using Gemini enhanced research"
       template: "audience_insights/audience_analysis.txt"
       dependencies: ["discovery", "market_position"]
       config:
         build_personas: true
         analyze_use_cases: true
         identify_pain_points: true
-        web_search_queries:
-          - "{{company_name}} customer reviews"
-          - "{{company_name}} case studies"
-          - "who uses {{company_name}}"
+        enable_grounding: true  # NEW: Use Gemini enhanced research
+        enable_url_context: true  # NEW: Company URL context available
+        require_citations: true  # NEW: Evidence-based analysis
+        # NOTE: web_search_queries removed - now handled by Gemini enhanced prompts
       output_fields:
         - primary_audiences
         - audience_segments
@@ -101,8 +101,8 @@ pipeline:
         - testimonial_themes
         
     - id: "competitive_landscape"
-      name: "Competitive Intelligence Scan"
-      description: "Map competitive landscape and analyze positioning opportunities"
+      name: "Gemini Competitive Intelligence Scan"
+      description: "Map competitive landscape and analyze positioning opportunities using Gemini enhanced research"
       template: "competitive_landscape/competitor_analysis.txt"
       dependencies: ["discovery", "market_position", "audience_insights"]
       config:
@@ -110,10 +110,10 @@ pipeline:
         analyze_direct: true
         analyze_indirect: true
         identify_alternatives: true
-        web_search_queries:
-          - "{{company_name}} competitors alternatives"
-          - "best {{product_category}} solutions"
-          - "{{company_name}} vs"
+        enable_grounding: true  # NEW: Use Gemini enhanced research
+        enable_url_context: true  # NEW: Company URL context available
+        require_citations: true  # NEW: Evidence-based analysis
+        # NOTE: web_search_queries removed - now handled by Gemini enhanced prompts
       output_fields:
         - direct_competitors
         - indirect_competitors
@@ -126,8 +126,8 @@ pipeline:
         - competitive_strategies
         
     - id: "strategic_synthesis"
-      name: "Strategic Intelligence Synthesis"
-      description: "Synthesize all findings into actionable strategic intelligence"
+      name: "Gemini Strategic Intelligence Synthesis"
+      description: "Synthesize all findings into actionable strategic intelligence using Gemini enhanced analysis"
       template: "strategic_synthesis/intelligence_report.txt"
       dependencies: ["discovery", "market_position", "audience_insights", "competitive_landscape"]
       config:
@@ -135,6 +135,9 @@ pipeline:
         identify_opportunities: true
         create_recommendations: true
         prioritize_actions: true
+        enable_grounding: true  # NEW: Use Gemini enhanced research
+        enable_url_context: true  # NEW: Company URL context available
+        require_citations: false  # SYNTHESIS: Uses previous step data, citations optional
       output_fields:
         - executive_summary
         - key_insights

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-05-31T21:35:10.985742",
+  "client_name": "indelible",
+  "step_id": "discovery",
+  "original_data": {
+    "content": "{\n  \"step\": \"company_discovery\",\n  \"company_url\": \"https://becomeindelible.com/\",\n  \"company_foundation_identity\": {\n    \"official_name\": null,\n    \"domain\": \"https://becomeindelible.com/\",\n    \"core_business\": null,\n    \"founding_story\": null,\n    \"industry_positioning\": null\n  },\n  \"business_model_value_proposition\": {\n    \"revenue_model\": null,\n    \"pricing\": null,\n    \"target_market\": null,\n    \"value_proposition\": null,\n    \"product_sophistication\": null\n  },\n  \"market_position_strategy\": {\n    \"competitive_position\": null,\n    \"differentiators\": [],\n    \"strengths\": [],\n    \"vulnerabilities\": [],\n    \"signals_maturity_gaps\": null\n  },\n  \"operational_intelligence\": {\n    \"leadership_team\": [],\n    \"company_size\": null,\n    \"location\": null,\n    \"technology_stack\": null,\n    \"growth_stage\": null,\n    \"revealed_priorities_ambitions\": null\n  },\n  \"strategic_insights_risks\": {\n    \"key_partnerships\": [],\n    \"notable_moves\": [],\n    \"industry_trends\": [],\n    \"red_flags\": [],\n    \"biggest_opportunities\": [],\n    \"biggest_threats\": []\n  },\n  \"contextual_analysis\": {\n    \"compared_companies\": [],\n    \"patterns_anomalies\": null\n  },\n  \"summary_of_key_findings\": [\n    \"No verifiable public information is available about https://becomeindelible.com/ as of this analysis.\",\n    \"All key company details\u2014including business model, leadership, and market position\u2014are unavailable from both the official site and external sources.\",\n    \"The lack of public presence or discoverable data is itself a strategic signal, indicating either stealth mode, very early stage, or a non-operational/placeholder entity.\"\n  ],\n  \"reasoning\": \"Process: \\n- Visited https://becomeindelible.com/ directly; the site is either non-functional, under construction, or otherwise provides no content or company information.\\n- Conducted Google searches for 'becomeindelible', 'becomeindelible.com', and related queries (e.g., 'Indelible company', 'Indelible startup', 'Indelible leadership', 'Indelible platform'). No official company profiles, press releases, LinkedIn pages, Crunchbase entries, or news articles were found.\\n- Checked for cached versions of the website via Google Cache and Archive.org; no meaningful content or company details were available.\\n- Searched LinkedIn for 'Indelible' and 'Become Indelible'\u2014no relevant company profiles or employees surfaced.\\n- No evidence of products, services, pricing, leadership, or any operational details could be found from reputable sources.\\n- All fields are set to null or empty as no verifiable data exists; this is explicitly supported by the absence of any discoverable public footprint.\",\n  \"implications\": \"The total absence of public information suggests several possibilities: the company may be in stealth mode, pre-launch, or not operational. This presents significant risks for diligence, partnership, or investment, as basic validation of existence, leadership, and business model is impossible. For any strategic engagement, direct outreach or privileged access would be required to proceed. The lack of data is a red flag for transparency and market readiness, and may indicate a need for further monitoring or alternative sourcing.\",\n  \"context_used\": {\n    \"previous_analyses\": \"[context.previous_analyses not found]\"\n  }\n}",
+    "metadata": {
+      "client": "indelible",
+      "step": "discovery",
+      "pipeline": "Company Intelligence Pipeline",
+      "url": "https://becomeindelible.com/",
+      "powered_by": "Catalyst v1 - Jonathan Edwards",
+      "analysis_type": "comprehensive",
+      "user_provider": "openai",
+      "user_model": "gpt-4.1",
+      "timestamp": "2025-05-31T21:35:10.903097"
+    }
+  },
+  "data_hash": "88976d878d965e635c85ebe4dc9297c0f5d30e01bacb742e29a4b8401548aa2d",
+  "token_count": 945
+}

@@ -39,12 +39,18 @@ Every field below must be present, even if null or empty.
 
 ## INSTRUCTIONS
 
-- Synthesize all provided chunks into a *single, focused narrative* under 950 tokens for the target analysis step.
-- "summary" should be a tight, executive-level synthesis—not a bullet list.
-- "key_insights" are 2–5 critical findings from the chunks.
-- "actionable_recommendations" should be filled if next steps are clearly supported by the input (otherwise leave empty).
-- Use "reasoning" for your step-by-step thought process and rationale.
+- Use ONLY facts and language directly present in the provided `source_chunks`.
+- Never invent, generalize, or summarize beyond what is present in the chunks.
+- For each `key_insight` and `actionable_recommendation`, **explicitly reference which chunk(s) it is supported by** (e.g., “Chunk 2: ...”).
+- If any fact is missing, ambiguous, or contradictory, **state this clearly in both `summary` and `reasoning`.**
+- Use short, direct sentences. Avoid complex or nested explanations.
+- `"summary"` must be a concise, executive-level narrative under 950 tokens, drawn strictly from the chunks.
+- `"key_insights"` should be 2–5 findings directly from the chunks, each with chunk reference(s).
+- `"actionable_recommendations"` should be filled only if next steps are clearly supported by the chunk data—never invent or extrapolate. Reference supporting chunk(s).
+- `"reasoning"` must detail exactly which chunks were used for each summary point, why those were chosen, and note any missing or conflicting info.
 - Always include the full `context_used` object (instructions, query, etc.).
+- If the input data is incomplete or ambiguous, surface this in both `"summary"` and `"reasoning"`.
+- If output is approaching the token limit or may be truncated, add a warning note to `"reasoning"` and output only complete, valid JSON.
 - All output must be valid JSON and begin with `{` and end with `}`.
 
 ---

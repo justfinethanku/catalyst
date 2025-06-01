@@ -1,0 +1,14 @@
+{
+  "id": "a890a6ed3067ad71500167b8271ed295",
+  "content": "Pipeline Execution Summary for indelible\nPipeline: company_intelligence\nURL: https://becomeindelible.com/\nStatus: failed\nExecution Time: 72.81 seconds\nSteps Completed: 0/1\n\nStep Results:\n- discovery: error\n  Error: LLM execution failed: Gemini grounding execution failed: Gemini blocked response due to safety filters. Try simplifying the prompt.",
+  "metadata": {
+    "client": "indelible",
+    "type": "pipeline_result",
+    "pipeline": "company_intelligence",
+    "status": "failed",
+    "steps_completed": 0,
+    "execution_time": 72.812417,
+    "timestamp": "2025-06-01T00:38:55.800107"
+  },
+  "stored_at": "2025-06-01T00:38:55.867197"
+}

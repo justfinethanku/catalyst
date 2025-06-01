@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-05-31T22:58:24.148989",
+  "client_name": "indelible",
+  "step_id": "discovery",
+  "original_data": {
+    "content": "{\n  \"step\": \"company_discovery\",\n  \"company_url\": \"https://becomeindelible.com/\",\n  \"company_foundation_identity\": {\n    \"official_name\": null,\n    \"domain\": \"https://becomeindelible.com/\",\n    \"core_business\": null,\n    \"founding_story\": null,\n    \"industry_positioning\": null\n  },\n  \"business_model_value_proposition\": {\n    \"revenue_model\": null,\n    \"pricing\": null,\n    \"target_market\": null,\n    \"value_proposition\": null,\n    \"product_sophistication\": null\n  },\n  \"market_position_strategy\": {\n    \"competitive_position\": null,\n    \"differentiators\": [],\n    \"strengths\": [],\n    \"vulnerabilities\": [],\n    \"signals_maturity_gaps\": null\n  },\n  \"operational_intelligence\": {\n    \"leadership_team\": [],\n    \"company_size\": null,\n    \"location\": null,\n    \"technology_stack\": null,\n    \"growth_stage\": null,\n    \"revealed_priorities_ambitions\": null\n  },\n  \"strategic_insights_risks\": {\n    \"key_partnerships\": [],\n    \"notable_moves\": [],\n    \"industry_trends\": [],\n    \"red_flags\": [],\n    \"biggest_opportunities\": [],\n    \"biggest_threats\": []\n  },\n  \"contextual_analysis\": {\n    \"compared_companies\": [],\n    \"patterns_anomalies\": null\n  },\n  \"summary_of_key_findings\": [\n    \"No verifiable information about becomeindelible.com could be found from web search or public sources.\",\n    \"Key company details such as business model, leadership, and offerings are unavailable, indicating either a stealth mode, inactive, or non-existent business.\",\n    \"Lack of digital footprint or discoverable presence is a significant red flag for credibility and market engagement.\"\n  ],\n  \"reasoning\": \"For each field, multiple targeted web searches were performed (e.g., 'becomeindelible.com company overview', 'becomeindelible.com leadership team', 'becomeindelible.com pricing', 'becomeindelible.com about', etc.). No official website content, news, leadership, product, or pricing information was found. Search results were either irrelevant or unrelated to the company in question, and no LinkedIn, Crunchbase, or industry coverage was discovered. Rate limits on some searches further limited coverage, but initial results strongly suggest the absence of any meaningful public presence. All fields are set to null or empty as no verifiable data could be found.\",\n  \"implications\": \"The absence of any discoverable information about becomeindelible.com is a major strategic risk, suggesting the company may not be operational, is in stealth, or lacks basic market presence. This severely limits due diligence and raises credibility concerns. Next steps should include direct outreach or verification of the domain's ownership and intent before any further engagement or investment consideration.\",\n  \"context_used\": {\n    \"previous_analyses\": \"[context.previous_analyses not found]\"\n  }\n}",
+    "metadata": {
+      "client": "indelible",
+      "step": "discovery",
+      "pipeline": "Company Intelligence Pipeline",
+      "url": "https://becomeindelible.com/",
+      "powered_by": "Catalyst v1 - Jonathan Edwards",
+      "analysis_type": "comprehensive",
+      "user_provider": "openai",
+      "user_model": "gpt-4.1",
+      "timestamp": "2025-05-31T22:58:23.615276"
+    }
+  },
+  "data_hash": "b14201ecd5c0a9a7488a318beeb10e639f64d7a4d13388eb73960dafec9e325f",
+  "token_count": 823
+}

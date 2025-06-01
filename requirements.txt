@@ -1,6 +1,6 @@
 # Core AI and LLM
 openai==1.82.0
-google-generativeai==0.8.5
+google-generativeai>=0.8.5
 tiktoken==0.7.0
 
 # Vector Database  
@@ -17,3 +17,7 @@ weasyprint==65.1
 python-dotenv==1.1.0
 pydantic==2.11.5
 PyYAML==6.0.2
+
+# HTTP Requests and Web Scraping
+requests==2.32.3
+beautifulsoup4==4.12.3

@@ -195,14 +195,13 @@ class PipelineEngine:
                 user_provider = metadata.get('user_provider')
                 user_model = metadata.get('user_model')
                 
-                if user_provider and user_model:
-                    logger.info(f"🎯 User model override: {user_provider} {user_model}")
-                    # Override the YAML settings with user selections
-                    config.settings['llm_provider'] = user_provider
-                    config.settings['model'] = user_model
-                    logger.info(f"✅ Pipeline will use: {user_provider} {user_model} (user selection)")
-                else:
-                    logger.info(f"📋 Using default pipeline settings: {config.settings.get('llm_provider', 'openai')} {config.settings.get('model', 'gpt-4.1')}")
+                # TEMPORARILY DISABLED: Use pipeline config instead of user overrides
+                logger.info(f"📋 Using pipeline configuration: {config.settings.get('llm_provider', 'gemini')} {config.settings.get('model', 'gemini-2.5-pro')}")
+                # if user_provider and user_model:
+                #     logger.info(f"🎯 User model override: {user_provider} {user_model}")
+                #     config.settings['llm_provider'] = user_provider
+                #     config.settings['model'] = user_model
+                #     logger.info(f"✅ Pipeline will use: {user_provider} {user_model} (user selection)")
             
             # Initialize pipeline result
             result = PipelineResult(
@@ -250,7 +249,14 @@ class PipelineEngine:
                 
                 # Add to pipeline context for next steps
                 if step_result.status == "success":
-                    pipeline_context.add_step_result(step_id, step_result.content)
+                    # Create proper dict structure for context
+                    result_dict = {
+                        "content": step_result.content,
+                        "timestamp": step_result.timestamp,
+                        "status": step_result.status,
+                        "execution_time": step_result.execution_time
+                    }
+                    pipeline_context.add_step_result(step_id, result_dict)
                     logger.info(f"✅ Completed: {step.name}")
                 else:
                     logger.error(f"❌ Failed: {step.name} - {step_result.error}")
@@ -346,10 +352,16 @@ class PipelineEngine:
                 logger.info(f"📝 Prompt rendered: {len(rendered_prompt):,} chars")
             
             # Execute LLM research using user-selected provider and model
-            provider = config.settings.get('llm_provider', 'openai')
+            provider = config.settings.get('llm_provider', 'gemini')
             
             # Build combined config with user selections taking precedence
-            llm_config = {**config.settings, **step.config}
+            llm_config = {**config.settings, **step.config, "step_id": step.id}
+            
+            # FOR ALL GEMINI RESEARCH STEPS: Add company URL for enhanced research context
+            if provider == "gemini" and pipeline_context.url:
+                llm_config["company_url"] = pipeline_context.url
+                llm_config["company_website"] = pipeline_context.url  # Alternative key
+                logger.info(f"🌐 Gemini {step.id}: Added company URL for enhanced research: {pipeline_context.url}")
             
             logger.info(f"🤖 Executing with {provider} using model: {llm_config.get('model', 'default')}")
             
@@ -366,17 +378,32 @@ class PipelineEngine:
             if llm_result.get("tool_calls"):
                 logger.info(f"🔧 Tools used: {len(llm_result['tool_calls'])}")
             
+            # Log Gemini grounding results
+            if provider == "gemini" and step.id == "discovery":
+                grounding_sources = len(llm_result.get("grounding_metadata", {}).get("sources_used", []))
+                url_sources = len(llm_result.get("url_context_metadata", {}).get("urls_successful", []))
+                logger.info(f"🧠 Gemini grounding: {grounding_sources} search sources, {url_sources} URLs analyzed")
+            
+            # Prepare metadata with grounding information
+            base_metadata = {
+                "client": pipeline_context.client_name,
+                "step": step.id,
+                "pipeline": config.name,
+                "url": pipeline_context.url,
+                **pipeline_context.metadata
+            }
+            
+            # Add Gemini grounding metadata if available
+            if llm_result.get("grounding_metadata"):
+                base_metadata["grounding_metadata"] = llm_result["grounding_metadata"]
+            if llm_result.get("url_context_metadata"):
+                base_metadata["url_context_metadata"] = llm_result["url_context_metadata"]
+            
             # Store in vector database (smart or original)
             if self.use_smart_chunking:
                 storage_report = await self.parallel_storage.store_with_chunking(
                     content=llm_result.get("raw_response", ""),
-                    metadata={
-                        "client": pipeline_context.client_name,
-                        "step": step.id,
-                        "pipeline": config.name,
-                        "url": pipeline_context.url,
-                        **pipeline_context.metadata
-                    },
+                    metadata=base_metadata,
                     client_name=pipeline_context.client_name
                 )
                 doc_id = storage_report["original_doc_id"]
@@ -389,13 +416,7 @@ class PipelineEngine:
             else:
                 doc_id = self.storage.store(
                     content=llm_result.get("raw_response", ""),
-                    metadata={
-                        "client": pipeline_context.client_name,
-                        "step": step.id,
-                        "pipeline": config.name,
-                        "url": pipeline_context.url,
-                        **pipeline_context.metadata
-                    },
+                    metadata=base_metadata,
                     client_name=pipeline_context.client_name
                 )
                 logger.info(f"💾 Stored: {doc_id[:8]}...")
@@ -404,10 +425,25 @@ class PipelineEngine:
             step_end = datetime.now()
             execution_time = (step_end - step_start).total_seconds()
             
+            # Create enhanced step result with grounding metadata
+            step_result_content = {
+                "content": llm_result["content"],
+                "raw_response": llm_result.get("raw_response", ""),
+                "tool_calls": llm_result.get("tool_calls", []),
+                "model": llm_result.get("model", ""),
+                "provider": llm_result.get("provider", provider)
+            }
+            
+            # Add Gemini grounding metadata to step result
+            if llm_result.get("grounding_metadata"):
+                step_result_content["grounding_metadata"] = llm_result["grounding_metadata"]
+            if llm_result.get("url_context_metadata"):
+                step_result_content["url_context_metadata"] = llm_result["url_context_metadata"]
+            
             return StepResult(
                 step_id=step.id,
                 status="success",
-                content=llm_result["content"],
+                content=step_result_content,
                 doc_id=doc_id,
                 execution_time=execution_time,
                 timestamp=step_end.isoformat()

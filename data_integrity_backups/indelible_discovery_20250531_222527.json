@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-05-31T22:25:27.684065",
+  "client_name": "indelible",
+  "step_id": "discovery",
+  "original_data": {
+    "content": "",
+    "metadata": {
+      "client": "indelible",
+      "step": "discovery",
+      "pipeline": "Company Intelligence Pipeline",
+      "url": "https://becomeindelible.com/",
+      "powered_by": "Catalyst v1 - Jonathan Edwards",
+      "analysis_type": "comprehensive",
+      "user_provider": "openai",
+      "user_model": "gpt-4.1",
+      "timestamp": "2025-05-31T22:25:27.157515"
+    }
+  },
+  "data_hash": "f3bc672e444c967b44f82631defaffb28fb260fd9913ff548814901011438746",
+  "token_count": 105
+}

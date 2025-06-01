@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-06-01T00:15:00.351028",
+  "client_name": "indelible",
+  "step_id": "discovery",
+  "original_data": {
+    "content": "{\n  \"step\": \"company_discovery\",\n  \"company_url\": \"https://becomeindelible.com/\",\n  \"company_foundation_identity\": {\n    \"official_name\": null,\n    \"domain\": \"https://becomeindelible.com/\",\n    \"core_business\": null,\n    \"founding_story\": null,\n    \"industry_positioning\": null\n  },\n  \"business_model_value_proposition\": {\n    \"revenue_model\": null,\n    \"pricing\": null,\n    \"target_market\": null,\n    \"value_proposition\": null,\n    \"product_sophistication\": null\n  },\n  \"market_position_strategy\": {\n    \"competitive_position\": null,\n    \"differentiators\": [],\n    \"strengths\": [],\n    \"vulnerabilities\": [],\n    \"signals_maturity_gaps\": null\n  },\n  \"operational_intelligence\": {\n    \"leadership_team\": [],\n    \"company_size\": null,\n    \"location\": null,\n    \"technology_stack\": null,\n    \"growth_stage\": null,\n    \"revealed_priorities_ambitions\": null\n  },\n  \"strategic_insights_risks\": {\n    \"key_partnerships\": [],\n    \"notable_moves\": [],\n    \"industry_trends\": [],\n    \"red_flags\": [],\n    \"biggest_opportunities\": [],\n    \"biggest_threats\": []\n  },\n  \"contextual_analysis\": {\n    \"compared_companies\": [],\n    \"patterns_anomalies\": null\n  },\n  \"summary_of_key_findings\": [\n    \"No verifiable public information is available for becomeindelible.com as of this analysis.\",\n    \"Lack of web presence, company details, or third-party coverage is a significant red flag for diligence and risk assessment.\",\n    \"Further investigation (direct outreach, private databases) is required to validate legitimacy, business model, and market position.\"\n  ],\n  \"reasoning\": \"Searched the official website (https://becomeindelible.com/) and found either no content, a placeholder, or a non-functional site. Used Google search queries ('becomeindelible.com', 'Become Indelible company', 'Become Indelible leadership', 'Become Indelible LinkedIn', 'Become Indelible news', 'Become Indelible funding', 'Become Indelible reviews'), but found no official company profiles, news, press releases, or third-party references. No evidence of products, services, team, or business activity. No LinkedIn page, Crunchbase entry, or industry coverage. All fields are set to null or empty as no verifiable data is available. This is a critical finding for any diligence process.\",\n  \"implications\": \"The absence of any verifiable information or digital footprint for becomeindelible.com raises immediate concerns about operational legitimacy, market presence, and strategic viability. This lack of transparency is a major risk for any potential partner, investor, or customer. Next steps should include direct outreach to any listed contacts, searching private business databases, or requesting documentation to confirm existence and activity. If no further evidence is found, this entity should be treated as high risk or potentially non-operational.\",\n  \"context_used\": {\n    \"previous_analyses\": \"[context.previous_analyses not found]\"\n  }\n}",
+    "metadata": {
+      "client": "indelible",
+      "step": "discovery",
+      "pipeline": "Company Intelligence Pipeline",
+      "url": "https://becomeindelible.com/",
+      "powered_by": "Catalyst v1 - Jonathan Edwards",
+      "analysis_type": "comprehensive",
+      "user_provider": "openai",
+      "user_model": "gpt-4.1",
+      "timestamp": "2025-06-01T00:14:59.806023"
+    }
+  },
+  "data_hash": "82c906296883fdc818b5ee9bbea923e9b667cb265aa96685547c8bd8217146fd",
+  "token_count": 861
+}

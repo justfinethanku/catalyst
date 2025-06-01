@@ -28,7 +28,7 @@ def render_sidebar():
         st.header("AI Model Settings")
         
         # Provider selection
-        available_providers = st.session_state.get('available_providers', ['openai'])
+        available_providers = st.session_state.get('available_providers', ['gemini'])
         # Ensure a default provider is set
         if 'selected_provider' not in st.session_state or st.session_state.selected_provider not in available_providers:
             st.session_state.selected_provider = available_providers[0]

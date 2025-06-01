@@ -66,6 +66,10 @@ class HybridStore:
         self.json_path = Path(json_backup_path)
         self.json_path.mkdir(exist_ok=True)
     
+    def _normalize_client_name(self, client_name: str) -> str:
+        """Normalize client name for consistent directory/file naming."""
+        return client_name.lower().replace(" ", "_")
+    
     def store(
         self,
         content: str,
@@ -202,12 +206,15 @@ class HybridStore:
                         deleted_count += len(ids_to_delete)
                         logger.info(f"🗑️ Deleted {len(ids_to_delete)} documents from ChromaDB for client: {client_name}")
             
-            # Delete JSON backup directory
-            client_dir = Path(self.json_backup_path) / client_name
+            # Delete JSON backup directory (normalize client name to match storage format)
+            normalized_client_name = self._normalize_client_name(client_name)
+            client_dir = self.json_path / normalized_client_name
             if client_dir.exists():
                 import shutil
                 shutil.rmtree(client_dir)
-                logger.info(f"🗑️ Deleted JSON backup directory for client: {client_name}")
+                logger.info(f"🗑️ Deleted JSON backup directory for client: {client_name} (path: {normalized_client_name})")
+            else:
+                logger.warning(f"⚠️  JSON backup directory not found for client: {client_name} (expected path: {normalized_client_name})")
             
             logger.info(f"✅ Successfully deleted all data for client: {client_name}")
             
@@ -236,7 +243,8 @@ class HybridStore:
     ):
         """Save backup to JSON file."""
         # Create client directory
-        client_dir = self.json_path / client_name.lower().replace(" ", "_")
+        normalized_client_name = self._normalize_client_name(client_name)
+        client_dir = self.json_path / normalized_client_name
         client_dir.mkdir(exist_ok=True)
         
         # Save data

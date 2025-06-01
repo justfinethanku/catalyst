@@ -29,7 +29,7 @@ class IntelligenceBriefingGenerator:
     @log_exceptions
     async def generate_briefing(self, 
                                client_name: str,
-                               provider: str = "openai",
+                               provider: str = "gemini",
                                model: str = None) -> Dict[str, Any]:
         """
         Generate comprehensive intelligence briefing for a client.
@@ -46,7 +46,7 @@ class IntelligenceBriefingGenerator:
             # Use default model if none provided, validate it exists in config
             if model is None:
                 available_models = get_provider_models(provider)
-                model = "gpt-4.1" if "gpt-4.1" in available_models else list(available_models.keys())[0]
+                model = "gemini-2.5-pro" if "gemini-2.5-pro" in available_models else list(available_models.keys())[0]
                 logger.info("Using default model: %s (from models.yaml)", model)
             
             logger.info(f"🧠 Generating Intelligence Briefing for {client_name}")
